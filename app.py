@@ -1,8 +1,7 @@
 import streamlit as st
 import joblib
+model = joblib.load('C:\Users\admin\Desktop\NAVIE_BAYES_MODEL\spam_classifier.pkl')
 
-# Load the trained model
-model = joblib.load("spam_classifier.pkl")
 
 # Page config
 st.set_page_config(page_title="Spam Classifier", layout="centered")
